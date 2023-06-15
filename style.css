@@ -1,0 +1,81 @@
+:root {
+      --primary-color: #336699;
+      --secondary-color: #F2F2F2;
+      --link-hover-color: #FF6600;
+      --link-active-color: #FF3300;
+      --box-padding: 20px;
+      --box-border: 1px solid #CCCCCC;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+    }
+
+    h1 {
+      color: var(--primary-color);
+      font-size: 24px;
+      text-align: center;
+    }
+
+    .container {
+      background-color: var(--secondary-color);
+      width: 500px;
+      height: 400px;
+      padding: var(--box-padding);
+    }
+
+    ul li:first-child {
+      font-weight: bold;
+    }
+
+    a {
+      color: var(--primary-color);
+      text-decoration: none;
+    }
+
+    a:hover {
+      color: var(--link-hover-color);
+    }
+
+    a:active {
+      color: var(--link-active-color);
+    }
+
+    img {
+      width: 200px;
+      height: 150px;
+    }
+
+    table {
+      border-collapse: collapse;
+      width: 100%;
+      background-color: var(--secondary-color);
+    }
+
+    th {
+      background-color: var(--primary-color);
+      color: #FFFFFF;
+      padding: var(--box-padding);
+    }
+
+    td {
+      border: var(--box-border);
+      padding: var(--box-padding);
+    }
+
+    tbody tr:hover {
+      background-color: var(--secondary-color);
+    }
+
+    td:first-child {
+      background-color: #FFCCCC;
+    }
+
+    tr:last-child td {
+      background-color: #FFFFCC;
+    }
+
+    td::before {
+      content: "•";
+      margin-right: 5px;
+    }
